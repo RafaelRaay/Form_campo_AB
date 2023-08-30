@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário A e B</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Campos númericos</h1>
+        <h2>Insira os valores abaixo</h2>
+        <form id="formAB">
+            <label for="campo-a">Campo A</label>
+            <input type="number" id="campo-a" required placeholder="Insira o valor menor" />
+            <p class="error-a">
+                O campo A precisa ser menor que o campo B!
+            </p>
+            <label for="campo-b">Campo B</label>
+            <input type="number" id="campo-b" required placeholder="Insira o valor maior" />
+            <p class="error-b">
+                O campo B precisa ser maior que o campo A!
+            </p>
+            <button type="submit">VALIDAR</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
